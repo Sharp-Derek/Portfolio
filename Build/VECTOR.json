@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "VECTOR.data.unityweb",
+"asmCodeUrl": "VECTOR.asm.code.unityweb",
+"asmMemoryUrl": "VECTOR.asm.memory.unityweb",
+"asmFrameworkUrl": "VECTOR.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

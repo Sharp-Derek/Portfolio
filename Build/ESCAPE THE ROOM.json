@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "ESCAPE THE ROOM.data.unityweb",
+"asmCodeUrl": "ESCAPE THE ROOM.asm.code.unityweb",
+"asmMemoryUrl": "ESCAPE THE ROOM.asm.memory.unityweb",
+"asmFrameworkUrl": "ESCAPE THE ROOM.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

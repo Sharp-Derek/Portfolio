@@ -1,0 +1,77 @@
+html {
+  background-color: white;
+  font-family: verdana;
+}
+.title {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-style: oblique;
+  border-bottom: 5px solid black;
+}
+.noMargin {
+  margin: 0px;
+}
+.noPadding {
+  padding: 0px;
+}
+.tab {
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.activeTabDiv{
+  color:white;
+  background-color:black;
+}
+.tabDiv {
+  color:black;
+}
+.tabDiv:hover {
+  color:white;
+  background-color:gray;
+}
+.gameTab {
+  margin-top:10px;
+  margin-bottom:10px;
+  color:black;
+  font-style: oblique;
+  font-weight: bold;
+}
+.floatRight {
+  float: right;
+}
+.floatLeft {
+  float: left;
+}
+.blueGradient {
+  background: linear-gradient(to bottom right, rgb(0,115,230),rgb(0,77,153))
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: purple;
+}
+.lime {
+  background-color: lime;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.white {
+  background-color: white;
+}
+.gray {
+  background-color: gray;
+}

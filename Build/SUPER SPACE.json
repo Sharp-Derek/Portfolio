@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "SUPER SPACE.data.unityweb",
+"asmCodeUrl": "SUPER SPACE.asm.code.unityweb",
+"asmMemoryUrl": "SUPER SPACE.asm.memory.unityweb",
+"asmFrameworkUrl": "SUPER SPACE.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
