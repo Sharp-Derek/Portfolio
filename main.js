@@ -60,5 +60,20 @@ function SetActiveTab(tabDiv, name) {
   }
 }
 
+function PopulateTextBoxes () {
+  var nameBox = document.getElementById("Name");
+  var numberBox = document.getElementById("phoneNumber");
+  var emailBox = document.getElementById("emailAddress");
+  var nameNode = document.createTextNode("Derek James Sharp");
+  var numberNode = document.createTextNode("(970) 290-5361");
+  var emailNode = document.createTextNode("dsharp640@comcast.net");
+  nameBox.appendChild(nameNode);
+  numberBox.appendChild(numberNode);
+  numberBox.href = "tel:9702905361";
+  emailBox.appendChild(emailNode);
+  emailBox.href = "mailto:dsharp640@comcast.net"
+}
+
 OrganizeElements();
 CreateTabs();
+PopulateTextBoxes();
