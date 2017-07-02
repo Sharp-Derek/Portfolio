@@ -40,7 +40,7 @@ function CreateTabs () {
         break;
       case 1:
         thisTabText.nodeValue = "About";
-        thisTabLink.href = "";
+        thisTabLink.href = "about.html";
         break;
       case 2:
         thisTabText.nodeValue = "Projects";

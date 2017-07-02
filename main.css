@@ -1,6 +1,10 @@
 html {
   background-color: white;
   font-family: verdana;
+  font-size: 100%;
+}
+body {
+  font-size: 1em;
 }
 .title {
   color: white;
@@ -74,4 +78,9 @@ html {
 }
 .gray {
   background-color: gray;
+}
+@media screen and (max-width:450px) {
+  body {
+    font-size: 10em;
+  }
 }
