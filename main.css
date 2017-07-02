@@ -41,7 +41,15 @@ body {
   margin-bottom:10px;
   color:black;
   font-style: oblique;
+  padding: 10px;
+}
+.gameTab h4 {
   font-weight: bold;
+  margin: 0px;
+}
+.gameTab:hover {
+  background-color: gray;
+  color:white;
 }
 .floatRight {
   float: right;
