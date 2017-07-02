@@ -13,6 +13,8 @@ subTitleH4.className = "noMargin col-xs-12";
 var subTitleH4Text = document.createTextNode("Game Design Portfolio");
 var tabsDiv = document.createElement("div");
 var headertabs = 3;
+var gamesContainer = document.getElementById("gamesContainer");
+var projectTabs = 5;
 
 function OrganizeElements() {
   titleH1.appendChild(titleH1Text);
@@ -67,13 +69,68 @@ function PopulateTextBoxes () {
   var nameNode = document.createTextNode("Derek James Sharp");
   var numberNode = document.createTextNode("(970) 290-5361");
   var emailNode = document.createTextNode("dsharp640@comcast.net");
-  nameBox.appendChild(nameNode);
-  numberBox.appendChild(numberNode);
-  numberBox.href = "tel:9702905361";
-  emailBox.appendChild(emailNode);
-  emailBox.href = "mailto:dsharp640@comcast.net"
+  if (nameBox != null) {
+    nameBox.appendChild(nameNode);
+    numberBox.appendChild(numberNode);
+    numberBox.href = "tel:9702905361";
+    emailBox.appendChild(emailNode);
+    emailBox.href = "mailto:dsharp640@comcast.net"
+  }
+}
+
+function ImageSource(name) {
+  return ("images/" + name);
+}
+
+function CreateProjectTabs() {
+  if (gamesContainer != null) {
+    for (var i = 0; i < projectTabs; i++) {
+      var pTabLink = document.createElement("a");
+      pTabLink.className = "gameLink";
+      var pTabDiv = document.createElement("div");
+      pTabDiv.className = "gameTab col-xs-10 col-xs-offset-1";
+      var pTabH4 = document.createElement("h4");
+      pTabH4.className = "col-xs-12";
+      var pTabText = document.createTextNode("");
+      var pTabImg = document.createElement("img");
+      pTabImg.className = "col-xs-12";
+      switch (i) {
+        case 0:
+          pTabLink.href = "pong.html";
+          pTabText.nodeValue = "PONG";
+          pTabImg.src = ImageSource("pongBanner.png");
+          break;
+        case 1:
+          pTabLink.href = "vector.html";
+          pTabText.nodeValue = "VECTOR";
+          pTabImg.src = ImageSource("vectorBanner.png");
+          break;
+        case 2:
+          pTabLink.href = "escapeRoom.html";
+          pTabText.nodeValue = "ESCAPE THE ROOM";
+          pTabImg.src = ImageSource("escapeBanner.png");
+          break;
+        case 3:
+          pTabLink.href = "superSpace.html";
+          pTabText.nodeValue = "SUPER SPACE";
+          pTabImg.src = ImageSource("spaceBanner.png");
+          break;
+        case 4:
+          pTabLink.href = "echo.html";
+          pTabText.nodeValue = "ECHO";
+          pTabImg.src = ImageSource("echoBanner.png");
+          break;
+      }
+      pTabH4.appendChild(pTabText);
+      pTabDiv.appendChild(pTabH4);
+      pTabDiv.appendChild(pTabImg);
+      pTabLink.appendChild(pTabDiv);
+      gamesContainer.appendChild(pTabLink);
+    }
+  }
 }
 
 OrganizeElements();
 CreateTabs();
 PopulateTextBoxes();
+CreateProjectTabs();
