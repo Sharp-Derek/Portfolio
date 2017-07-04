@@ -1,6 +1,6 @@
 html {
   background-color: white;
-  font-family: verdana;
+  font-family: verdana !important;
   font-size: 100%;
 }
 body {
@@ -87,8 +87,8 @@ body {
 .gray {
   background-color: gray;
 }
-@media screen and (max-width:450px) {
-  body {
-    font-size: 10em;
+@media screen and (max-width:768px) {
+  h1 {
+    font-size: 4em !important;
   }
 }
