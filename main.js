@@ -1,4 +1,4 @@
-var header = document.getElementsByTagName("header");
+var header = document.getElementsByTagName("header")[0];
 var headerDiv = document.createElement("div");
 headerDiv.className = "container-fluid";
 var headerRow = document.createElement("div");
@@ -15,6 +15,10 @@ var tabsDiv = document.createElement("div");
 var headertabs = 3;
 var gamesContainer = document.getElementById("gamesContainer");
 var projectTabs = 5;
+var head = document.getElementsByTagName("head")[0];
+var viewMeta = document.createElement("meta");
+viewMeta.name = "viewport";
+viewMeta.content = "width=device-width, initial-scale=1.0";
 
 function OrganizeElements() {
   titleH1.appendChild(titleH1Text);
@@ -24,7 +28,8 @@ function OrganizeElements() {
   headerRow.appendChild(titleDiv);
   headerRow.appendChild(tabsDiv);
   headerDiv.appendChild(headerRow);
-  header[0].appendChild(headerDiv);
+  header.appendChild(headerDiv);
+  head.appendChild(viewMeta);
 }
 
 function CreateTabs () {
