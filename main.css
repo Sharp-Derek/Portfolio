@@ -87,8 +87,3 @@ body {
 .gray {
   background-color: gray;
 }
-@media screen and (max-width:768px) {
-  h1 {
-    font-size: 4em !important;
-  }
-}
