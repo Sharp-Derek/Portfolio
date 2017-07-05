@@ -22,6 +22,7 @@ viewMeta.name = "viewport";
 viewMeta.content = "width=device-width, initial-scale=1.0";
 var favLink = document.createElement("link");
 favLink.rel="shortcut icon";
+favLink.type="image/x-icon";
 favLink.href="images/favicon.ico";
 var gameBox = document.getElementsByClassName("webgl-content")[0];
 
