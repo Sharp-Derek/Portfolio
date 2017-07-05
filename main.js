@@ -7,7 +7,8 @@ var titleDiv = document.createElement("div");
 titleDiv.className = "title col-xs-12 blueGradient"
 var titleH1 = document.createElement("h1");
 titleH1.className = "noMargin col-xs-12";
-var titleH1Text = document.createTextNode("Derek Sharp");
+titleH1.innerHTML = "D<span class='small'>EREK</span> S<span class='small'>HARP</span>";
+//var titleH1Text = document.createTextNode("Derek Sharp");
 var subTitleH4 = document.createElement("h4");
 subTitleH4.className = "noMargin col-xs-12";
 var subTitleH4Text = document.createTextNode("Game Design Portfolio");
@@ -19,9 +20,13 @@ var head = document.getElementsByTagName("head")[0];
 var viewMeta = document.createElement("meta");
 viewMeta.name = "viewport";
 viewMeta.content = "width=device-width, initial-scale=1.0";
+var favLink = document.createElement("link");
+favLink.rel="shortcut icon";
+favLink.href="images/favicon.ico";
+var gameBox = document.getElementsByClassName("webgl-content")[0];
 
 function OrganizeElements() {
-  titleH1.appendChild(titleH1Text);
+  //titleH1.appendChild(titleH1Text);
   titleDiv.appendChild(titleH1);
   subTitleH4.appendChild(subTitleH4Text);
   titleDiv.appendChild(subTitleH4);
@@ -30,6 +35,7 @@ function OrganizeElements() {
   headerDiv.appendChild(headerRow);
   header.appendChild(headerDiv);
   head.appendChild(viewMeta);
+  head.appendChild(favLink);
 }
 
 function CreateTabs () {
@@ -93,7 +99,7 @@ function CreateProjectTabs() {
       var pTabLink = document.createElement("a");
       pTabLink.className = "gameLink";
       var pTabDiv = document.createElement("div");
-      pTabDiv.className = "gameTab col-xs-10 col-xs-offset-1";
+      pTabDiv.className = "gameTab col-xs-12";
       var pTabH4 = document.createElement("h4");
       pTabH4.className = "col-xs-12";
       var pTabText = document.createTextNode("");
@@ -135,7 +141,19 @@ function CreateProjectTabs() {
   }
 }
 
+function doPlayError () {
+  if (gameBox != null) {
+    var errorBox = document.createElement("div");
+    errorBox.id = "errorBox";
+    errorBox.className = "col-xs-12 text-center";
+    var errorNode = document.createTextNode("Oops! Looks like the device you're using to play this game is too small to display it properly. Maybe try switching to a desktop computer?");
+    errorBox.appendChild(errorNode);
+    gameBox.insertBefore(errorBox,gameBox.childNodes[0]);
+  }
+}
+
 OrganizeElements();
 CreateTabs();
 PopulateTextBoxes();
 CreateProjectTabs();
+doPlayError();
