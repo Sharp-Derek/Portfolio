@@ -23,7 +23,7 @@ viewMeta.content = "width=device-width, initial-scale=1.0";
 var favLink = document.createElement("link");
 favLink.rel="shortcut icon";
 favLink.type="image/x-icon";
-favLink.href="images/favicon.ico";
+favLink.href="favicon.ico";
 var gameBox = document.getElementsByClassName("webgl-content")[0];
 
 function OrganizeElements() {
@@ -36,7 +36,7 @@ function OrganizeElements() {
   headerDiv.appendChild(headerRow);
   header.appendChild(headerDiv);
   head.appendChild(viewMeta);
-  head.appendChild(favLink);
+  head.insertBefore(favLink,head.childNodes[0]);
 }
 
 function CreateTabs () {
