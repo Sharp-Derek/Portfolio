@@ -38,10 +38,10 @@ function OrganizeElements() {
 }
 
 function CreateTabs () {
-  for(var i = 0; i < headertabs; i++) {
+  for(var i = headertabs - 1; i >= 0; i--) {
     var thisTabLink = document.createElement("a");
     var thisTabDiv = document.createElement("div");
-    thisTabDiv.className = "tabDiv col-xs-4";
+    thisTabDiv.className = "tabDiv col-xs-4 col-md-2 pull-right";
     var thisTabH4 = document.createElement("h4");
     thisTabH4.className = "noMargin tab";
     var thisTabText = document.createTextNode("");
@@ -68,7 +68,7 @@ function CreateTabs () {
 }
 function SetActiveTab(tabDiv, name) {
   if(document.title.includes(name)) {
-    tabDiv.className = "activeTabDiv col-xs-4";
+    tabDiv.className = "activeTabDiv col-xs-4 col-md-2 pull-right";
   }
 }
 
@@ -98,7 +98,7 @@ function CreateProjectTabs() {
       var pTabLink = document.createElement("a");
       pTabLink.className = "gameLink";
       var pTabDiv = document.createElement("div");
-      pTabDiv.className = "gameTab col-xs-12";
+      pTabDiv.className = "gameTab col-xs-12 col-md-4";
       var pTabH4 = document.createElement("h4");
       pTabH4.className = "col-xs-12";
       var pTabText = document.createTextNode("");
@@ -137,6 +137,9 @@ function CreateProjectTabs() {
       pTabLink.appendChild(pTabDiv);
       gamesContainer.appendChild(pTabLink);
     }
+    //var clearDiv = document.createElement("div");
+    //clearDiv.className = "clearfix visible-md";
+    //gamesContainer.insertBefore(clearDiv,gamesContainer.childNodes[4]);
   }
 }
 

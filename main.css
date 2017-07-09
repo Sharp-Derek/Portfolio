@@ -42,11 +42,10 @@ h1 .small {
   background-color:gray;
 }
 .gameTab {
-  margin-top:10px;
-  margin-bottom:10px;
   color:black;
   font-style: oblique;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .gameTab h4 {
   font-weight: bold;
@@ -61,6 +60,22 @@ h1 .small {
 }
 .floatLeft {
   float: left;
+}
+.fullWidth {
+  width: 100%;
+}
+.pageHead {
+  width:95%;
+  margin:auto;
+  border-bottom: 2px solid black;
+}
+.smIcon {
+  height:30px;
+  width:30px;
+  float:left;
+  margin:10%;
+  margin-top:-20px;
+  margin-bottom: -5px;
 }
 .blueGradient {
   background: linear-gradient(to bottom right, rgb(0,115,230),rgb(0,77,153))
