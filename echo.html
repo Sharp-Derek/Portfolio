@@ -16,11 +16,25 @@
     <header>
     </header>
     <div class="webgl-content">
+      <h4 id="titleBox">ECHO</h4>
       <div id="gameContainer" style="width: 600px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-      </div>
+      <span id="dateNode">June 24<sup>th</sup>, 2017</span>
+      <span id="descNode">
+        <i>ECHO</i> is a top-down puzzle game inspired by <i>The Legend of Zelda</i> and <i>The Swapper</i>, and in it, you play as an adventurer stuck in a time loop,
+        who must use both his past and present selves to solve puzzles and unlock doors.
+        <br>To solve these puzzles, you must consider your moves very carefully, as both your present self and your past self, your "Echo", interact with objects at the same time,
+        whether it be pushing statues, stepping on buttons, or flipping switches. If you flip a switch one way, your Echo will flip it the other way.
+        If you pushed a statue to a place you previously were, then your Echo will push it out of its way. Your Echo will go anywhere you can, even
+        through dangers that you might have avoided. But violet fog will destroy your Echo if it touches it, so be wary of where you walk.
+        <br>The game features ten rooms, and at the end of the last room, your total play time is posted at the Game Over screen. Replay to get a better time!
+      </span>
+      <span id="contNode">W - Move Up
+        <br>A - Move Left
+        <br>S - Move Down
+        <br>D - Move Right
+        <br>E - Summon Echo
+        <br>R - Reset Room
+      </span>
     </div>
     <script src="main.js"></script>
   </body>

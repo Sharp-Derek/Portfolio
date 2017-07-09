@@ -99,6 +99,23 @@ h1 .small {
 }
 #errorBox {
   display: none;
+  margin-top: 18px;
+  padding:10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #404040;
+  color:white;
+}
+#titleBox {
+  margin:auto;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  font-style: oblique;
+  font-weight: bold;
+}
+#descriptionBox {
+  margin:auto;
+  margin-bottom: 50px;
 }
 @media screen and (max-width:959px) {
   #gameContainer {
@@ -106,5 +123,14 @@ h1 .small {
   }
   #errorBox {
     display: block;
+  }
+  #titleBox {
+    width: 95% !important;
+    margin-left: 10px;
+  }
+  #descriptionBox {
+    width: 95% !important;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

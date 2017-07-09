@@ -8,7 +8,6 @@ titleDiv.className = "title col-xs-12 blueGradient"
 var titleH1 = document.createElement("h1");
 titleH1.className = "noMargin col-xs-12";
 titleH1.innerHTML = "D<span class='small'>EREK</span> S<span class='small'>HARP</span>";
-//var titleH1Text = document.createTextNode("Derek Sharp");
 var subTitleH4 = document.createElement("h4");
 subTitleH4.className = "noMargin col-xs-12";
 var subTitleH4Text = document.createTextNode("Game Design Portfolio");
@@ -27,7 +26,6 @@ favLink.href="favicon.ico";
 var gameBox = document.getElementsByClassName("webgl-content")[0];
 
 function OrganizeElements() {
-  //titleH1.appendChild(titleH1Text);
   titleDiv.appendChild(titleH1);
   subTitleH4.appendChild(subTitleH4Text);
   titleDiv.appendChild(subTitleH4);
@@ -142,14 +140,46 @@ function CreateProjectTabs() {
   }
 }
 
-function doPlayError () {
+function doPlayFunction () {
   if (gameBox != null) {
     var errorBox = document.createElement("div");
     errorBox.id = "errorBox";
-    errorBox.className = "col-xs-12 text-center";
+    errorBox.className = "text-center";
     var errorNode = document.createTextNode("Oops! Looks like the device you're using to play this game is too small to display it properly. Maybe try switching to a desktop computer?");
     errorBox.appendChild(errorNode);
-    gameBox.insertBefore(errorBox,gameBox.childNodes[0]);
+    gameBox.insertBefore(errorBox,gameBox.childNodes[2]);
+    var gConWidth = document.getElementById("gameContainer").style.width;
+    var titleBox = document.getElementById("titleBox");
+    titleBox.style.width = gConWidth;
+    var descriptionBox = document.createElement("p");
+    descriptionBox.id = "descriptionBox";
+    descriptionBox.style.width = gConWidth;
+    var date = document.createElement("span");
+    var description = document.createElement("span");
+    var descBold = document.createElement("strong");
+    descBold.innerHTML = "Description: ";
+    var dateBold = document.createElement("strong");
+    dateBold.innerHTML = "Date Created: ";
+    var controls = document.createElement("span");
+    var contBold = document.createElement("strong");
+    contBold.innerHTML = "Controls:<br>";
+    var dateNode = document.getElementById("dateNode");
+    var descNode = document.getElementById("descNode");
+    var contNode = document.getElementById("contNode");
+    date.appendChild(dateBold);
+    date.appendChild(dateNode);
+    description.appendChild(descBold);
+    description.appendChild(descNode);
+    controls.appendChild(contBold);
+    controls.appendChild(contNode);
+    descriptionBox.appendChild(date);
+    descriptionBox.appendChild(document.createElement("br"));
+    descriptionBox.appendChild(document.createElement("br"));
+    descriptionBox.appendChild(description);
+    descriptionBox.appendChild(document.createElement("br"));
+    descriptionBox.appendChild(document.createElement("br"));
+    descriptionBox.appendChild(controls);
+    gameBox.appendChild(descriptionBox);
   }
 }
 
@@ -157,4 +187,4 @@ OrganizeElements();
 CreateTabs();
 PopulateTextBoxes();
 CreateProjectTabs();
-doPlayError();
+doPlayFunction();

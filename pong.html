@@ -16,12 +16,19 @@
     <header>
     </header>
     <div class="webgl-content">
+      <h4 id="titleBox">PONG</h4>
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-      </div>
     </div>
+    <span id="dateNode">January 23<sup>rd</sup>, 2016</span>
+    <span id="descNode">My first foray into game design, <i>PONG</i> is just that: a clone of the original game,
+       down to the bleeps and bloops. The more the ball bounces between paddles, the faster it gets. The game ends when a player
+       gains 10 points.</span>
+    <span id="contNode">SPACE - Pause Game
+      <br>Q - Move Up (Left Paddle)
+      <br>A - Move Down (Left Paddle)
+      <br>P - Move Up (Right Paddle)
+      <br>L - Move Down (Right Paddle)
+    </span>
     <script src="main.js"></script>
   </body>
 </html>
