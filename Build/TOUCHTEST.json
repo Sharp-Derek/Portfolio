@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "TOUCHTEST.data.unityweb",
+"asmCodeUrl": "TOUCHTEST.asm.code.unityweb",
+"asmMemoryUrl": "TOUCHTEST.asm.memory.unityweb",
+"asmFrameworkUrl": "TOUCHTEST.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
